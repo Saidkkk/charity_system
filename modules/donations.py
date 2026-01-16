@@ -364,7 +364,7 @@ def _manage_donors(user_data=None):
                     return
                 
                 for donor in donors:
-                    with st.expander(f"{"👤" if donor.donor_type == 'individual' else "🏢"} {donor.full_name or donor.company_name}"):
+                    with st.expander(f"{'👤' if donor.donor_type == 'individual' else '🏢'} {donor.full_name or donor.company_name}"):
                         col1, col2, col3 = st.columns([3, 1, 1])
                         
                         with col1:
