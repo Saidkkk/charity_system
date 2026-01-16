@@ -1,0 +1,50 @@
+.
+├── add_users.py
+├── app.py
+├── auth
+│   ├── authentication.py
+│   ├── __init__.py
+│   └── permissions.py
+├── chat_context.json
+├── config.py
+├── data
+│   ├── backups
+│   │   ├── app_bkp.py
+│   │   └── authentication_bkp.py
+│   └── charity.db
+├── database
+│   ├── __init__.py
+│   ├── models.py
+│   └── session.py
+├── final_solution.py
+├── fix_models_final.py
+├── init_db.py
+├── logs
+├── modules
+│   ├── activities.py
+│   ├── beneficiaries.py
+│   ├── dashboard.py
+│   ├── donations.py
+│   ├── employees.py
+│   ├── __init__.py
+│   ├── notifications.py
+│   ├── reports.py
+│   └── settings.py
+├── project_tree.txt
+├── quick_fix.py
+├── recreate_complete.py
+├── recreate_db.py
+├── requirements.txt
+├── RESUME_GUIDE.md
+├── save_final_context.py
+├── simple_fix.py
+├── static
+│   ├── css
+│   └── images
+├── test_auth.py
+└── utils
+    ├── helpers.py
+    ├── __init__.py
+    └── validators.py
+
+11 directories, 37 files
