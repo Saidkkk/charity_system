@@ -5,6 +5,30 @@ from modules import show_dashboard, show_beneficiaries
 from modules.activities import show_activities_main
 from modules.donations import show_donations_main as show_donations
 
+# ... بعد استيراد streamlit
+
+# 1. استيراد الإعدادات
+from config import Config
+
+# 2. تهيئة المجلدات فوراً
+print("🔧 جاري تهيئة المجلدات...")
+if Config.setup_directories():
+    print("✅ المجلدات جاهزة")
+else:
+    print("⚠️  مشكلة في إنشاء المجلدات")
+
+# 3. استيراد باقي المكتبات
+try:
+    from database.session import db_manager
+    print("✅ قاعدة البيانات جاهزة")
+except Exception as e:
+    print(f"❌ خطأ في قاعدة البيانات: {e}")
+    st.error("خطأ في تهيئة النظام. يرجى مراجعة السجلات.")
+    st.stop()
+
+# ... باقي الكود ...
+
+
 # إعدادات الصفحة
 st.set_page_config(
     page_title="نظام إدارة الجمعية الخيرية",

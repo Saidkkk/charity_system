@@ -10,6 +10,11 @@ class DatabaseManager:
     def __init__(self):
         self.engine = None
         self.SessionLocal = None
+
+        print(f"🔧 تهيئة قاعدة البيانات...")
+        print(f"📁 المسار: {Config.DATABASE_PATH}")
+        print(f"🔗 URL: {Config.DATABASE_URL}")
+
         self._init_engine()
         self._create_tables()
     
